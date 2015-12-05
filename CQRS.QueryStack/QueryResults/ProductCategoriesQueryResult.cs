@@ -5,6 +5,6 @@ namespace CQRS.QueryStack.Queries
 {
     public class ProductCategoriesQueryResult
     {
-        public List<ProductCategory> ProductCategories { get; set; }
+        public List<ProductCategory> ProductCategories { get; internal set; }
     }
 }

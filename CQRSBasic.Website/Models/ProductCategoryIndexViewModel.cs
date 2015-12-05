@@ -1,7 +1,7 @@
 ﻿using CQRSBasic.DataModel;
 using System.Collections.Generic;
 
-namespace CQRS.Website.Models
+namespace CQRSBasic.Website.Models
 {
     public class ProductCategoryIndexViewModel
     {        

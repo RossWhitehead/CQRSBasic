@@ -4,7 +4,11 @@ namespace CQRSBasic.CommandStack.Commands
 {
     public class DeleteProductCategoryCommand
     {
-        [Required]
-        public int ProductCategoryId { get; set; }
+        public int ProductCategoryId { get; }
+
+        public DeleteProductCategoryCommand(int productCategoryId)
+        {
+            this.ProductCategoryId = productCategoryId;
+        }
     }
 }

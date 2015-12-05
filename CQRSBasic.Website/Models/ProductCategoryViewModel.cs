@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CQRS.Website.Models
+namespace CQRSBasic.Website.Models
 {
     public class ProductCategoryViewModel
     {
@@ -14,6 +14,7 @@ namespace CQRS.Website.Models
 
         [Required]
         [StringLength(100)]
+        [Display(Name="Name")]
         public string ProductCategoryName { get; set; }
     }
 }

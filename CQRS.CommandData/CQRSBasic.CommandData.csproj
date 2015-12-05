@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandDbContext.cs" />
+    <Compile Include="Migrations\201512051652097_InitialCreate.cs" />
+    <Compile Include="Migrations\201512051652097_InitialCreate.Designer.cs">
+      <DependentUpon>201512051652097_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +66,11 @@
       <Project>{27f8e70a-c656-4128-aa3d-54c69b01d462}</Project>
       <Name>CQRSBasic.DataModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512051652097_InitialCreate.resx">
+      <DependentUpon>201512051652097_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

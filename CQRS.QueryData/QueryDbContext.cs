@@ -1,4 +1,5 @@
 ﻿using CQRSBasic.DataModel;
+using System;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 
@@ -9,6 +10,12 @@ namespace CQRSBasic.QueryData
         // Use ReadOnlyConnectionString from App/Web.config
         public QueryDbContext() : base("Name=CQRSBasicDb")
         {
+        }
+
+        public override int SaveChanges()
+        {
+            // Throw if they try to call this
+            throw new InvalidOperationException("This context is read-only.");
         }
 
         // Does not expose Add(), Remove(), etc.
@@ -33,8 +40,8 @@ namespace CQRSBasic.QueryData
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // Need to register the entities
-            modelBuilder.Entity<Product>();
-            modelBuilder.Entity<ProductCategory>();
+            modelBuilder.Entity<Product>().ToTable("Product");
+            modelBuilder.Entity<ProductCategory>().ToTable("ProductCategory");
 
             base.OnModelCreating(modelBuilder);
         }
