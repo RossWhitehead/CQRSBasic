@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.Website", "CQRSBa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.CommandStack", "CQRSBasic.CommandStack\CQRSBasic.CommandStack.csproj", "{418B9274-FF11-46C8-8968-299A4ED279F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.QueryStack", "CQRS.QueryStack\CQRSBasic.QueryStack.csproj", "{2B78B881-813E-4C3B-9860-6D7B4CDA3317}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.QueryStack", "CQRSBasic.QueryStack\CQRSBasic.QueryStack.csproj", "{2B78B881-813E-4C3B-9860-6D7B4CDA3317}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.CommandData", "CQRS.CommandData\CQRSBasic.CommandData.csproj", "{194AAED4-DB01-4808-9164-06BF00F70DAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.CommandData", "CQRSBasic.CommandData\CQRSBasic.CommandData.csproj", "{194AAED4-DB01-4808-9164-06BF00F70DAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.QueryData", "CQRS.QueryData\CQRSBasic.QueryData.csproj", "{FB008496-CDAC-4245-91D1-785771BC162F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.QueryData", "CQRSBasic.QueryData\CQRSBasic.QueryData.csproj", "{FB008496-CDAC-4245-91D1-785771BC162F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSBasic.DataModel", "CQRSBasic.DataModel\CQRSBasic.DataModel.csproj", "{27F8E70A-C656-4128-AA3D-54C69B01D462}"
 EndProject
